@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>restosay</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_start">
+      <h1 class="logo"><a>Resto<span class="red">Say</span></a></h1>
+    </div>
+    <nav class="header_end">
+      <ul class="header_page_nav">
+        <li><a href="#service_block" class="header_link">услуги</a></li>
+        <li><a href="#vacancy_block" class="header_link">вакансии</a></li>
+        <li><a href="#suppliers_block" class="header_link">поставщики</a></li>
+      </ul>
+      
+      <button id="hamb_btn" class="hamburger_menu"></button>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    
+    <section class="section_title">
+      <div class="container_title">
+        <h2 class="main_title">Отберем <span class="red">лучшее</span> для вашего вкуса и бизнеса</h2>
+      </div>
+    </section>
+
+    <section class="where to eat" id="where to eat_block">
+      <h3 class="title_section">где поесть</h3>
+
+  
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/butchers.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">butchers</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/butchers.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Заведение с подлинной пивоварней и гриль меню. Порции от детской до Гиганта и дегустационное пиво на любой вкус. У нас действует концепция дружелюбного сервиса и уютного интерьера. Ждем вас!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">своё производство</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/наденька.webp" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">наденька</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/наденька.webp" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Название бара — отсылка к главной героине популярного советского фильма «Ирония судьбы». В меню — самодельные настойки с оригинальными вкусами: кинза-чили, огурец-маракуйя и белые грибы. На закуску — любимые домашние блюда: оливье, крабовый, сельдь под шубой, пирожки и гвоздь меню — курица-гриль.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">вкусно</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/касуля.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">косуля</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/касуля.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">В меню представлены блюда, знакомые многим: бутерброды, гурьевская каша, голубцы, пельмени и супы (борщ, щи, рассольник). Бар предлагает настойки (облепиховую, вишневую, овощную и хреновуху) и коктейль «Кровавую Мэри». Интерьер украшает советское мозаичное панно, найденное при ремонте.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">вкусно</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+    </section>
+
+    <section class="suppliers" id="suppliers_block">
+      <h3 class="title_section">Поставщики</h3>
+  
+      <div class="container_btn_nav">
+        <button class="btn_suppliers active_suppliers" data-filter="all">Все поставщики</button>
+        <button class="btn_suppliers" data-filter="products">Продукты</button>
+        <button class="btn_suppliers" data-filter="household_goods">Хозяйственные товары</button>
+        <button class="btn_suppliers" data-filter="bar_products">Барная продукция</button>
+      </div>
+  
+  
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Овощи и фрукты</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/овощи.jpeg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Наша компания занимается поставкой свежих фруктов и овощей прямо к вашей двери! Работаем 7 дней в неделю. Быстрая доставка, высокое качество продуктов и доступные цены.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">своё производство</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Рыба и морепродукты</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/рыба.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Мы предлагаем свежую рыбу с доставкой прямо на ваш стол! Лучшее качество, доступные цены и быстрая доставка в удобное для вас время. Закажите уже сегодня!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">друг restosay</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers household_goods">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">хозка</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/хозка.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Наша компания заботится о вашей экономии и удобстве! Мы предлагаем широкий ассортимент хозяйственных товаров с быстрой доставкой на дом. Высокое качество продуктов и доступные цены.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">PRO быт</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers bar_products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Компания Сиропы</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/сиропы.png" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Погрузитесь в мир вкусов наших сиропов! У нас вы найдете лучшие сиропы для приготовления коктейлей, десертов и напитков. Широкий выбор вкусов, высокое качество и быстрая доставка.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers household_goods">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">крафтуха братуха</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/бумажнаяупаковка.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Хотите придать своим продуктам уникальный стиль? Мы предлагаем крафтовую упаковку из натуральной бумаги - экологически чистое и стильное решение для вашего бизнеса. Различные формы и размеры, доступные цены и быстрая доставка. Сделайте свои продукты более привлекательными уже сейчас!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">своё производство</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers household_goods">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">чистер чит</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/жижа.jpeg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Наша компания предлагает качественное средство для посудомоечных машин, которое мягко ухаживает за вашей посудой и обеспечивает идеальную чистоту. Безопасно для человека и окружающей среды. Закажите уже сегодня и наслаждайтесь безупречным результатом!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">pro быт</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers bar_products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">джанго</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/кофе.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Наши 67 сортов кофе станут для вас настоящей находкой! Мы предлагаем свежеобжаренный кофе, который можно заказать в зернах или молотом виде. Высокое качество, доступные цены и быстрая доставка. Закажите уже сегодня и наслаждайтесь ароматом свежеизготовленного кофе в любое время!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">друг restosay</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Авакадо Доставка</h3>
+              <h4 class="status_user">Александр Петров</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/авакадо.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Сладкие и сливочные авокадо - это наша страсть и профессия! Мы предлагаем свежие авокадо с доставкой прямо к вам домой. Высокое качество, доступные цены и быстрая доставка. Наслаждайтесь фруктами, которые отлично подходят для гуакамоле, салатов и многих других блюд. Закажите уже сегодня и погрузитесь в мир авокадо!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">МясоТорг</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/мясо.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Мы гордимся качеством нашего мяса! Мы предлагаем свежее и натуральное мясо с доставкой на дом. Широкий выбор продуктов, высокое качество, доступные цены и быстрая доставка. Уверены, что вы полюбите наше мясо! Закажите уже сегодня и наслаждайтесь вкусом свежего мяса.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">друг restosay</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_suppliers products">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">ЯпонаВсячина</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/азия.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Искушенные японской кухней, мы гарантируем, что наши японские продукты доставят вам истинное наслаждение! Мы предлагаем широкий выбор японских продуктов, включая суши, морепродукты, маринады и многое другое. Высокое качество продукции, доступные цены и быстрая доставка. Закажите уже сегодня и наслаждайтесь японским вкусом у себя дома!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+    </section>
+  
+    <section class="service" id="service_block">
+      <h3 class="title_section">Услуги</h3>
+  
+      <div class="card">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/card/kd3.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Кибер Дед</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/komy-ne-stoit-idti-v-it-3.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Кибер Дед - компания, специализирующаяся на разработке сайтов и мобильных приложений. Мы поможем вам создать высококачественный продукт, который позволит расширить ваш бизнес и привлечь новых клиентов.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">друг restosay</a>
+            <a href="" class="tegs_card_link">IT</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+        
+      </div>
+  
+      <div class="card">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/glinomes.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Glinomes</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/glina.jpeg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Компания "Глиномес" продает высококачественную глиняную посуду для бизнеса. Наша посуда создана из экологически чистых материалов и имеет отличные потребительские свойства. Создайте неповторимый стиль вашего заведения с нами!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">своё производство</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/дезинсекция.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">дезинсекция</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/diz.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Защитите свое заведение от вредных насекомых! Предлагаем услуги по дезинсекции для ресторанов и баров. Безопасные и эффективные методы обезвреживания вредителей. Обратитесь к нам сейчас!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">PRO быт</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/master.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Ремонт оборудования</h3>
+              <h4 class="status_user">Денис Заебись</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/ремонт.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Ремонтирую холодильное и кухонное оборудование. Быстро и качественно на любой сложности. Консультирую по техническим вопросам и помогаю в выборе оборудования.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">PRO быт</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+  
+    </section>
+  
+    <section class="vacancy" id="vacancy_block">
+      <h3 class="title_section">Вакансии</h3>
+  
+      <div class="container_btn_nav">
+        <button class="btn_vacancy is_active" data-filter="all">Все вакансии</button>
+        <button class="btn_vacancy" data-filter="employee">Найти сотрудника</button>
+        <button class="btn_vacancy" data-filter="work">Найти работу</button>
+        <button class="btn_vacancy" data-filter="new_card">Добавить новую вакансию</button>
+      </div>
+  
+      <div class="card_vacancy work">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/yoki.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Yoki</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/yoki.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Срочно требуется повар-сушист! З/п 3000 за смену. Возможно обучение. График работы - посменный. Высокие шансы на карьерный рост в нашей компании!</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">друг restosay</a>
+            <a href="" class="tegs_card_link">вкусно</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_vacancy employee">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/yoki.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Иванов Иван</h3>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/powar.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Опытный повар ищет работу с высокой зарплатой! Опыт работы более 10 лет, владение многими кулинарными техниками и стилями, нацелен на развитие и улучшение блюд. Готов поднять уровень вашего ресторана.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_vacancy work">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users//казоку.png" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Kazoku</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/kazoku.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Требуется профессиональный повар для готовки раменов в японской традиции. Высокая заработная плата! Опыт и знание японской кухни обязательны. Возможны бонусы и перспективы роста.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+            <a href="" class="tegs_card_link">друг restosay</a>
+            <a href="" class="tegs_card_link">вкусно</a>
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_vacancy employee">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/харитон.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Харитон Харитонов</h3>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/повар_с_медалью.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Повар с звездой Мишлен ищет работу в ресторане! Эксперт в высокой кухне, владею креативными приемами приготовления блюд. Готов внести свой вклад в развитие вашего заведения.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_vacancy employee">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/семен.jpg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Семён Семёныч</h3>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/Chef.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Молодой повар ищет работу! Хочу набраться опыта и развиваться в кулинарии. Мотивирован на достижение высоких результатов. Буду рад принять участие в работе вашего ресторана.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+  
+      <div class="card_vacancy work">
+        <div class="card_header">
+          <div class="card_header_start">
+            <img class="card_header_img" src="img/users/пивдиета.jpeg" alt="logo">
+            <div class="container_block">
+              <h3 class="card_name">Пивная диета</h3>
+              <h4 class="status_user">компания</h4>
+            </div>
+          </div>
+          <div class="card_header_end">
+            <img class="card_header_info" src="img/icons/menu-bar.png" alt="info">
+          </div>
+        </div>
+        <div class="card_img">
+          <img class="img_card" src="img/card/pivnaya-dieta1.jpg" alt="img_card">
+        </div>
+        <div class="card_description">
+          <p class="description">Требуется бармен, готовый работать по ночам. Заработная плата + %. Опыт работы и умение общаться с посетителями - обязательны. Будет предоставлено обучение.</p>
+        </div>
+        <div class="footer_card">
+          <div class="tegs_card">
+
+          </div>
+          <div class="card_heart">
+            <img class="heart" src="img/icons/heart.svg" alt="heart">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="user_page hiden">
+    <img class="close_user_page" src="img/icons/closebtn.svg" alt="">
+    <div class="img_user_container">
+      <img src="/img/card/kd3.jpg" alt="" class="img_user_page">
+    </div>
+    <h2 class="title_user_page">Кибер Дед</h2>
+    <div class="contacts_user_page">
+      <a href="" class="img_link">
+        <img src="img/icons/telega.png" alt="">
+      </a>
+      <a href="" class="img_link">
+        <img src="img/icons/mail.png" alt="">
+      </a>
+      <a href="" class="img_link">
+        <img src="img/icons/phone.png" alt="">
+      </a>
+    </div>
+    <ul class="description_user_page">
+      <li class="description_user"><span class="red">режим работы</span><br> пн/пт с 10:00 до 18:00</li>
+      <li class="description_user"><span class="red">прайс лист</span></li>
+    </ul>  
+  </section>
+
+
+
+
+
+  <div class="modal_nav_page">
+    <div class="popup_container">
+      <button class="close_btn"></button>
+      <ul class="header_popup_list">
+        <li class="popup_item"><button class="user_logo"></button></li>
+        <li class="popup_item"><a href="#suppliers_block" class="popup_link link3">поставщики</a></li>
+        <li class="popup_item"><a href="#service_block" class="popup_link link1">услуги</a></li>
+        <li class="popup_item"><a href="#vacancy_block" class="popup_link link2">вакансии</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="popup_enter">
+    <div class="popup_enter_container">
+      <button class="close_btn"></button>
+      <form class="registration_form">
+        <div class="form-group">
+          <label for="login">Логин:</label>
+          <input class="input" type="text" id="login" name="login">
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль:</label>
+          <input class="input" type="password" id="password" name="password">
+        </div>
+        <div class="container_btn">
+          <button type="button" class="btn-register">Зарегистрироваться</button>
+          <button type="submit" class="btn-login">Войти</button>
+        </div> 
+      </form>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
